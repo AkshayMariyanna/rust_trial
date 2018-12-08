@@ -1,0 +1,28 @@
+fn main() {
+    println!("Hello, a {:?} is {} cents!", Coin::Dime, Coin::Dime.value_in_cents());
+    println!("Hello, a {:?} is {} cents!", Coin::Penny, Coin::Penny.value_in_cents());
+    println!("Hello, a {:?} is {} cents!", Coin::Nickel, Coin::Nickel.value_in_cents());
+    println!("Hello, a {:?} is {} cents!", Coin::Quarter, Coin::Quarter.value_in_cents());
+}
+
+#[derive(Debug)]
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+
+impl Coin {
+    fn value_in_cents(&self) -> u32 {
+        match self{
+            Coin::Penny => {
+                println!("Lucky Penny");
+                1
+            },
+            Coin::Nickel => 5,
+            Coin::Dime => 10,
+            Coin::Quarter => 25,
+        }
+    }
+}
