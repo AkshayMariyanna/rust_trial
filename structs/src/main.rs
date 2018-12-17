@@ -15,7 +15,7 @@ fn main() {
 
     mut_user.email = String::from("sm93@e.com");
 
-    let user2 = User {
+    let _user2 = User {
         email: String::from("some@e.com"),
         username: String::from("some"),
         ..imm_user

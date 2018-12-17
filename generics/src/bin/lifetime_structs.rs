@@ -7,5 +7,5 @@ fn main() {
     let first_sentence = novel.split('.')
         .next()
         .expect("Could not find a '.'");
-    let i = ImportantExcerpt { part: first_sentence };
+    let _i = ImportantExcerpt { part: first_sentence };
 }

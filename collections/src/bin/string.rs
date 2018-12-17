@@ -1,9 +1,9 @@
 fn main() {
-    let mut s = String::new();
+    let _s = String::new();
 
     let data = "initial contents";
-    let s = data.to_string();
-    let s = "initial contents".to_string();
+    let _s = data.to_string();
+    let _s = "initial contents".to_string();
 
     let mut s = String::from("foo");
     s.push_str("bar");
@@ -44,15 +44,15 @@ fn main() {
 }
 
 fn hello() {
-    let hello = String::from("السلام عليكم");
-    let hello = String::from("Dobrý den");
-    let hello = String::from("Hello");
-    let hello = String::from("שָׁלוֹם");
-    let hello = String::from("नमस्ते");
-    let hello = String::from("こんにちは");
-    let hello = String::from("안녕하세요");
-    let hello = String::from("你好");
-    let hello = String::from("Olá");
-    let hello = String::from("Здравствуйте");
-    let hello = String::from("Hola");
+    let _hello = String::from("السلام عليكم");
+    let _hello = String::from("Dobrý den");
+    let _hello = String::from("Hello");
+    let _hello = String::from("שָׁלוֹם");
+    let _hello = String::from("नमस्ते");
+    let _hello = String::from("こんにちは");
+    let _hello = String::from("안녕하세요");
+    let _hello = String::from("你好");
+    let _hello = String::from("Olá");
+    let _hello = String::from("Здравствуйте");
+    let _hello = String::from("Hola");
 }

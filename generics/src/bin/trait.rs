@@ -57,19 +57,19 @@ fn notify_boundL<T: Summary> (item: T) {
     println!("Breaking news! {}", item.summarize());
 }
 
-fn notify_multi(item1: impl Summary, item2: impl Summary) {
+fn notify_multi(_item1: impl Summary, _item2: impl Summary) {
 }
 
-fn notify_multi_bound<T: Summary> (item1: T, item2: T){
+fn notify_multi_bound<T: Summary> (_item1: T, _item2: T){
 }
 
-fn multiple_traits(item: impl Summary + Display) {}
+fn multiple_traits(_item: impl Summary + Display) {}
 
-fn multiple_traits_bound<T: Summary + Display>(item: T) {}
+fn multiple_traits_bound<T: Summary + Display>(_item: T) {}
 
-fn messy_multi<T: Display + Clone, U: Clone + Debug>(t: T, u: U) {}
+fn messy_multi<T: Display + Clone, U: Clone + Debug>(_t: T, _u: U) {}
 
-fn where_clean_multi<T, U>(t: T, u: U)
+fn where_clean_multi<T, U>(_t: T, _u: U)
 where
     T: Display + Clone,
     U: Clone + Debug

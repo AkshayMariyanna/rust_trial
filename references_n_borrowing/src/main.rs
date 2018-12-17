@@ -26,8 +26,8 @@ fn main() {
     let _r4 = &mut s;
     _r4.push_str(", world");
 
-    let s = String::from("hello world");
-    let mut s1 = String::from("hello world");
+    let _s = String::from("hello world");
+    let s1 = String::from("hello world");
     println!("{}", _r4);
 
     let _hello: &str = &s1[0..5];
@@ -40,9 +40,9 @@ fn main() {
 
 
     let string_literal: &str = "Hello, I am a slice too";
-    let wd = accept_literals_and_strings(string_literal);
-    let wd = accept_literals_and_strings(&s1[..]);
-    let wd = accept_literals_and_strings(&string_literal[..]);
+    let _wd = accept_literals_and_strings(string_literal);
+    let _wd = accept_literals_and_strings(&s1[..]);
+    let _wd = accept_literals_and_strings(&string_literal[..]);
 }
 
 fn accept_literals_and_strings(s: &str) -> &str {

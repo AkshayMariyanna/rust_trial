@@ -21,7 +21,7 @@ fn main() {
 
     sound::instrument::woodwind::clarinet();
     {
-        use sound::instrument::woodwind;
+        use crate::sound::instrument::woodwind;
         woodwind::clarinet();
     }
     //woodwind::clarinet(); //<- compilation error, as woodwind name not in scope here
@@ -29,8 +29,8 @@ fn main() {
 
     v.name = String::from("eggplant");
 
-    let order1 = menu::Appetizer::Soup;
-    let order2 = menu::Appetizer::Salad;
+    let _order1 = menu::Appetizer::Soup;
+    let _order2 = menu::Appetizer::Salad;
 }
 
 

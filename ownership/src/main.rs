@@ -5,22 +5,22 @@ fn main() {
     mutable_string.push_str("mutable string");
     println!("{}", mutable_string);
 
-    let s1 = gives_ownership();
+    let _s1 = gives_ownership();
 
     let s2 = String::from("hello");
 
-    let s3 = takes_and_gives_back(s2);
+    let _s3 = takes_and_gives_back(s2);
 }
 
 fn move_lesson() {
     let x = 5;
-    let y = x;
+    let _y = x;
 
     let s1 = String::from("String for move"); 
-    let s2 = s1; // move
+    let _s2 = s1; // move
 
     let s1 = String::from("String for clone");
-    let s2 = s1.clone();
+    let _s2 = s1.clone();
 
     // Copy and Drop Traits -> in future episodes
 }

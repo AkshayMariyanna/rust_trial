@@ -9,11 +9,11 @@ fn main() {
     let result = largest(&char_list);
     println!("The largest char is {}", result);
 
-    let integer = Point { x: 10, y: 5 };
+    let _integer = Point { x: 10, y: 5 };
     let float = Point { x: 1.0, y: 0.5 };
 
-    let mixed = Point2 { x: 1.0, y: 5 };
-    let mixed2 = Point2 { x: 1, y: 5.0 };
+    let _mixed = Point2 { x: 1.0, y: 5 };
+    let _mixed2 = Point2 { x: 1, y: 5.0 };
 
     float.distance_from_origin();
 

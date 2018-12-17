@@ -7,7 +7,7 @@ use std::io::ErrorKind;
 fn read_and_panic_on_not_notfound() {
     let f = File::open("hello.txt");
 
-    let f = match f {
+    let _f = match f {
         Ok(file) => file,
         Err(error) => match error.kind() {
             ErrorKind::NotFound => match File::create("hello.txt") {
@@ -52,7 +52,7 @@ fn read_username_from_file_ques_chained() -> Result<String, io::Error> {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let f = File::open("hello.txt")?;
+    let _f = File::open("hello.txt")?;
 
     Ok(())
 }

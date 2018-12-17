@@ -1,17 +1,17 @@
 fn main() {
-    let four = IpAddrKind::V4;
-    let six = IpAddrKind::V6;
+    let _four = IpAddrKind::V4;
+    let _six = IpAddrKind::V6;
     route(IpAddrKind::V4);
     route(IpAddrKind::V6);
 
-    let loopback = IpAddrS {
+    let _loopback = IpAddrS {
         kind: IpAddrKind::V6,
         address: String::from("::1"),
     };
 
-    let home = IpAddr::V4(String::from("127.0.0.1"));
+    let _home = IpAddr::V4(String::from("127.0.0.1"));
 
-    let home_e = IpAddrEnhanced::V4(127, 0, 0, 1);
+    let _home_e = IpAddrEnhanced::V4(127, 0, 0, 1);
 
     let m = Message::Write(String::from("hello"));
     m.call();
@@ -40,7 +40,7 @@ enum IpAddrEnhanced {
     V6(String),
 }
 
-fn route(ip_type: IpAddrKind) {
+fn route(_ip_type: IpAddrKind) {
     
 }
 

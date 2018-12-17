@@ -1,20 +1,20 @@
 fn main() {
-    let v: Vec<i32> = Vec::new();
-    let v = vec![1, 2, 3];
+    let _v: Vec<i32> = Vec::new();
+    let _v = vec![1, 2, 3];
 
     let mut v = Vec::new();
 
     v.push(5);
 
     let v = vec![1, 2, 3, 4, 5];
-    let third: &i32 = &v[2];
-    let third: i32 = v[2]; // ints are copied by default, so this is fine
+    let _third: &i32 = &v[2];
+    let _third: i32 = v[2]; // ints are copied by default, so this is fine
 
     let v = vec![T {i: 2,}];
-    let first = &v[0];
+    let _first = &v[0];
     //let first = v[0]; // this is not fine, cause move mutates the original vector
 
-    let mut v = vec![T {i: 2}]; 
+    let _v = vec![T {i: 2}]; 
     // let first = v[0]; // this also is not fine, as a read on vector mutates vector
 
     let v = vec![1,2,3,4,5];
@@ -41,7 +41,7 @@ fn main() {
         println!("{}",i);
     }
 
-    let row = vec![
+    let _row = vec![
         SpreadsheetCell::Int(3),
         SpreadsheetCell::Float(3.4),
         SpreadsheetCell::Text(String::from("blue")),
