@@ -1,4 +1,4 @@
-extern crate integration_test;
+use integration_test;
 
 mod common;
 
