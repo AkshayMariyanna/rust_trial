@@ -1,0 +1,9 @@
+use add_one;
+use rand;
+
+fn main() {
+    let num = 10;
+    println!("Hello, world! {} plus one is {}", num, add_one::add_one(num));
+    let thre = rand::thread_rng();
+    println!("Next random : {}", add_one::ret_rand(thre));
+}
