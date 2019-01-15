@@ -1,0 +1,9 @@
+[package]
+name = "hello_macro_user"
+version = "0.1.0"
+authors = ["Akshay Mariyanna <akshay.mariyanna@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hello_macro = { path = "../hello_macro" }
+hello_macro_derive = { path = "../hello_macro/hello_macro_derive" }
